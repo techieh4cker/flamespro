@@ -1,0 +1,125 @@
+*{ 
+    margin: 2px;
+    padding: 1px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html{
+    background-color: rgb(0, 0, 0);
+    animation-name: flames;
+    animation-duration: 5s;
+    scroll-behavior: smooth;
+}
+@keyframes flames {
+    from {background-color: rgb(249, 219, 150);}
+    to {background-color: rgb(0, 0, 0);}
+}
+    
+div{
+    margin-top: 2%;
+    background-color: rgb(242, 159, 251);
+    background-repeat: no-repeat;
+    border-radius: 6px;
+}
+::placeholder{
+    color: rgb(78, 5, 5);
+    font-size: large;
+    font-style: italic;
+    opacity: 0.5;
+}
+header{
+    font-weight:900;
+    padding: 10px;
+    border-radius: 6px;
+    color: rgb(233, 255, 91);
+    background-image: url(bg.jpg);
+    font-size: 105%;
+
+}
+header:hover{
+    color: #ffffff;
+}
+#name1,#name2{
+    background-color: rgb(240, 255, 173);
+    border-radius: 25px;
+    border: 2px solid rgb(144, 0, 62);
+    border-width: 3px;
+    height: 50px;
+    width: 70%;
+    transition: 0.05s;
+    font-size: 25px;
+    color: rgb(58, 0, 0);
+}
+#name1:focus{
+    border: 2px solid #555;
+    background-color: rgb(200, 253, 108);
+}
+#name2:focus{
+    border: 2px solid #555;
+    background-color: rgb(108, 248, 253);
+}
+
+#p2{
+    text-align:left;
+}
+#p3{
+    font-weight: bold;
+    text-align: left;
+    margin-left: 35%;
+}
+#h2:hover{
+    color: rgb(73, 0, 0);
+}
+#check,#reset,#btn{
+    background-image: linear-gradient(orange,red);
+    border-radius: 25px;
+    height: 35px;
+    font-size: large;
+    font-weight: bold;
+    width: 100px;
+}
+#check:active{
+    background-color: rgb(255, 0, 0);
+    border-color: red;
+    width: 70px;
+    transition: 0.25s;
+}
+#reset:active{
+    background-color: rgb(255, 0, 0);
+    width: 70px;
+    transition: 0.5s;
+}
+#check:hover,#reset:hover{
+    cursor: pointer;
+    border-color: rgb(255, 0, 0);
+
+}
+footer{
+    color: rgb(255, 255, 255);
+    margin-top: 2%;
+    background-color: rgb(30, 23, 29);
+    border-radius: 6px;
+}
+.tech{
+    font-size: 25px;
+    font-weight: bold;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 1px #fff, 0 0 20px rgb(255, 0, 0), 0 0 30px #e60000, 0 0 40px #ff0000, 0 0 0px;
+    }
+    to {
+      text-shadow: 0 px #fff, 0 0 30px #ff0000, 0  40px #ff0000, 0 50px #ff0000;
+    }
+  }
+.karthi{
+    font-size: 25px;
+    font-weight: bold;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+.copy{
+    font-family: 'Courier New', Courier, monospace;
+}
